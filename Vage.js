@@ -94,7 +94,6 @@ class Vage {
   }
 
   validate(target) {
-    this.messages = []
     this.validators.forEach((validator) => {
       if (!validator.validate(target)) {
         this.messages.push(validator.message)
